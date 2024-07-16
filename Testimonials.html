@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavor Forge Restaurant</title>
+    <link rel="icon" href="Images/Flavor Forge Restaurant.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("images/i.webp");
+            background-size: cover;
+            margin: 0;
+            padding: 0;    
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 25px;
+            text-align: center;
+            margin-bottom: 20px;
+            animation: fadeIn 2s; 
+        }
+
+        .header h1 {
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            animation: fadeIn 2s;
+        }
+
+        .header p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            animation: fadeIn 2s; 
+        }
+
+        .card {
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px; 
+            transition: transform 0.5s; 
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+            border-radius: 50%;
+            animation: spin 3s;
+        }
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-text {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 50px;
+            text-align: center;
+            clear: both;
+            margin-bottom: 20px; 
+            animation: fadeIn 2s; 
+        }
+
+        footer p {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            color: honeydew;
+            font-weight: bold;
+            margin-top: 20px; 
+            text-align: center; 
+        }
+
+        h2 img {
+            display: block;
+            margin: 0 auto; 
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Flavor Forge Restaurant</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Testimonials.html">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="header">
+        <div class="container">
+            <h1 class="display-4">Flavor Forge Restaurant</h1>
+            <p class="lead">Experience the art of fine dining</p>
+        </div>
+    </div>
+    <div class="container">
+        <h2>What Our Customers Say</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/John Doe.jpeg" alt="John Doe, Customer" class="img-fluid rounded-circle">
+                        <p class="card-text">"The food was amazing! The service was top-notch.<br>I'll definitely be back!"</p>
+                        <h5 class="card-title">JohnDoe</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/Emily Davis.jpg" alt="Emily Davis, Customer" class="img-fluid rounded-circle">
+                        <p class="card-text">"The ambiance was cozy and intimate.<br>The chef's special was <strong>incredible!</strong>"</p>
+                        <h5 class="card-title">Emily Davis</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/Tellas.jpeg" alt="Maria Tellas, Customer" class="img-fluid rounded-circle">
+                        <p class="card-text">"The staff were friendly and attentive.<br>The food was <strong>delicious</strong> and reasonably priced!"</p>
+                        <h5 class="card-title">Maria Tellas</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Flavor Forge Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

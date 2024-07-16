@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Flavor Forge Restaurant</title>
+    <link rel="icon" href="Images/Flavor Forge Restaurant.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("images/i.webp");
+            background-size: cover;
+            color: #333;
+        }
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: whitesmoke;
+        }
+        .nav-link {
+            color: #fff;
+            margin-right: 20px;
+        }
+        .nav-link:hover {
+            color: #ccc;
+        }
+        .main-content {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color:lightcoral;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .form-control:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .error {
+            color: #dc3545;
+            font-size: 0.875rem;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .success {
+            color: #28a745;
+            font-size: 1.125rem;
+            text-align: center;
+            margin-top: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Flavor Forge Restaurant</a>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container main-content">
+        <div class="header">
+            <h2>Contact Us</h2>
+        </div>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" class="form-control" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+            <div id="error-msg" class="error"></div>
+            <div id="success-msg" class="success"></div>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2024 Flavor Forge Restaurant. All rights reserved.
+    </footer>
+
+<script>
+    function validateForm() {
+        var name = document.getElementById('name').value.trim();
+        var message = document.getElementById('message').value.trim();
+        var errorDiv = document.getElementById('error-msg');
+        var successDiv = document.getElementById('success-msg');
+        var isValid = true;
+
+        errorDiv.innerHTML = '';
+        successDiv.innerHTML = '';
+
+        if (name === '') {
+            errorDiv.innerHTML = 'Please enter your name.';
+            isValid = false;
+        }
+
+        if (message === '') {
+            errorDiv.innerHTML += '<br>Please enter your message.';
+            isValid = false;
+        }
+
+        if (isValid) {
+            // Simulate form submission (replace with actual form submission code)
+            setTimeout(function() {
+                successDiv.innerHTML = 'Message sent successfully!';
+                document.getElementById('contactForm').reset(); // Reset form after submission
+
+                setTimeout(function() {
+                    successDiv.innerHTML = '';
+                }, 3000);
+
+            }, 1000);
+        }
+
+        return false; 
+    }
+</script>
+</body>
+</html>

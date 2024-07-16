@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavor Forge Restaurant</title>
+    <link rel="icon" href="Images/Flavor Forge Restaurant.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-image: url("images/i.webp");
+            background-size: cover;
+            border-radius: 50%;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color:indigo;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            animation: fade-in 2s;
+            position: relative; 
+        }
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            animation: slide-in 2s;
+        }
+        .intro {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(237, 243, 244, 0.7);
+            border: 1px solid #3c3a3a;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: zoom-in 2s;
+        }
+        .intro p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: rgb(0, 113, 206);
+            color: lavender;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+        .btn:hover {
+            background-color: #9f69ff;
+            box-shadow: 0 0 10px rgba(159, 105, 255, 0.5); 
+        }
+        .btn-primary:hover {
+            background-color: #9f69ff; 
+            box-shadow: 0 0 10px rgba(255, 105, 180, 0.5); 
+        }
+        .container {
+            margin-bottom: 50px;
+        }
+        footer {
+                 background-color: #333;
+                 color: #add8e6;
+                 padding: 10px 0;
+                 text-align: center;
+                 position: fixed;
+                 bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes slide-in {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+        @keyframes zoom-in {
+            0% {
+                transform: scale(0.5);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        @keyframes slide-up {
+            0% {
+                transform: translateY(100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        .today-special {
+            margin-top: 40px;
+            text-align: center;
+            animation: zoom-in 2s;
+        }
+        .today-special h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        } 
+        </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Flavor Forge Restaurant</h1>
+        <p>Where flavors come alive!</p>
+    </header>
+    <div class="container">
+        <div class="intro">
+            <h2>Welcome to Flavor Forge Restaurant</h2>
+            <p>Experience the art of culinary excellence at Flavor Forge Restaurant, where our chefs craft dishes that will delight your senses and leave you wanting more. From classic favorites to innovative creations, our menu is designed to take you on a gastronomic journey around the world.</p>
+            <p>Join us for a truly unforgettable dining experience, whether you're celebrating a special occasion or just looking for a night out with friends and family.</p>
+            <a href="Menu.html" class="btn btn-primary">View Menu &#8250;</a>
+        </div>
+    <footer>
+        <p>&copy; 2023 Flavor Forge Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+</html>
